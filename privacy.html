@@ -47,7 +47,7 @@
   <div class="wrap">
     <header>
       <h1>Privacy Policy</h1>
-      <p class="muted">Invoice Maker Pro &nbsp;·&nbsp; Last updated: <span id="updated">September 9, 2026</span></p>
+      <p class="muted">Invoice Maker Pro &nbsp;·&nbsp; Last updated: <span id="updated">September 11, 2026</span></p>
     </header>
 
     <section>
@@ -71,9 +71,13 @@
       </ul>
       <p>All app data is stored locally in SQLite on your device and never leaves it unless you export or
         share a file yourself (invoice PDF, backup file).</p>
-      <p>Automatically collected (see Section 4): <strong>crash reports</strong> (release builds only) —
-        stack traces, device model, OS version, and app version. Crash reports never include your invoice,
-        client, or business data.</p>
+      <p>Automatically collected (see Section 4): <strong>crash reports</strong> and <strong>usage
+        analytics</strong> (release builds only). Crash reports include stack traces, device model, OS
+        version, and app version. Usage analytics include app interactions (for example, an invoice was
+        created or the paywall was viewed), screen names, a random app-install identifier, device model, OS
+        version, app version, and approximate (country-level) location derived from IP address. Neither
+        crash reports nor analytics ever include your invoice numbers, amounts, client or business details,
+        or item text.</p>
     </section>
 
     <section>
@@ -129,9 +133,15 @@
             <td>Crash diagnostics, release builds only</td>
             <td>Crash logs, device model/OS, app version — never invoice or client contents</td>
           </tr>
+          <tr>
+            <td>Firebase Analytics (Google)</td>
+            <td>Aggregate product usage and paywall conversion, release builds only</td>
+            <td>App interaction events, screen names, app-install identifier, device model/OS, app version, approximate location — never invoice or client contents</td>
+          </tr>
         </tbody>
       </table>
-      <p>No advertising or analytics SDKs. Nothing is sold or shared with advertisers.</p>
+      <p>No advertising SDKs. Analytics is used only to understand aggregate product usage and is not used
+        for advertising, and nothing is sold or shared with advertisers.</p>
     </section>
 
     <section>
@@ -139,7 +149,8 @@
       <p>
         We do not sell, rent, or trade your personal data. We do not share the contents of your invoices with
         any third party. Data leaves your device only to the providers above, and only as needed for a
-        purchase you initiate or a crash report from a release build.
+        purchase you initiate, a crash report from a release build, or aggregate usage analytics from a
+        release build.
       </p>
     </section>
 
@@ -152,6 +163,8 @@
           policies. You can cancel, renew, or delete purchases through your Google Play account.</li>
         <li><strong>Crash reports:</strong> retained by Google per Firebase policies; they contain no invoice
           or client data.</li>
+        <li><strong>Usage analytics:</strong> retained by Google per Firebase policies, typically for up to 14
+          months; it contains no invoice or client data.</li>
       </ul>
     </section>
 
